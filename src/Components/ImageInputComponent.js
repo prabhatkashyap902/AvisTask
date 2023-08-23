@@ -9,6 +9,7 @@ const ImageInputComponent = (props) => {
     if (event.target.files && event.target.files[0]) {
         setCheck(true)
         props.imageLink(URL.createObjectURL(event.target.files[0]))
+        console.log(URL.createObjectURL(event.target.files[0]))
         }
     }
     const onInputChange=(event)=>{

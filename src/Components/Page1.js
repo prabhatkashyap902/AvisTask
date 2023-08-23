@@ -10,7 +10,9 @@ const Page1 = () => {
   };
   const handleInput = (input) => {	
 	setData({...data,input1:input})
+  console.log(data)
   };
+  useEffect(()=>{},[data])
 	
   return (
 	<div>
